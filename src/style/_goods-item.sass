@@ -1,0 +1,36 @@
+// goods
+// goods__list
+ // goods__item
+.goods-item
+  min-height: 450px
+  height: 100% //делает карточки ровными при переполнении
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  gap: 10px
+  text-align: center
+  &__title
+    font-weight: 500
+    font-size: 22px
+    line-height: 27px
+  &__image
+    width: 100%
+  &__buy
+    display: flex
+    justify-content: space-between
+    gap: 5px
+    padding-right: 15px
+    padding-left: 15px
+    align-items: center
+  &__to-cart
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    padding: 8px 20px
+    background-color: transparent
+    border: 1px solid $color-primary
+  &__price
+    font-weight: 700
+    font-size: 22px
+    line-height: 27px

@@ -1,0 +1,48 @@
+
+.footer
+  background-color: $color-primary
+  color: $color-secondary
+  padding-top: 80px
+  padding-bottom: 80px
+  &__container
+    margin-bottom: 51px
+    display: grid
+    gap: 30px
+    grid-template-columns: 1fr 2fr 1fr 1fr
+  &__logo-link
+    // place-self: start //содержит 2 свойства ниже
+    align-self: start //сжимает ссылку во фракции
+    justify-self: start //сжимает ссылку во фракции
+  &__logo-img
+    width: 146px
+  // &__column
+  &__column-title
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 700
+    font-size: 32px
+    line-height: 130%
+    margin-bottom: 40px
+  &__list
+    font-weight: 400
+    font-size: 22px
+    line-height: 150%
+    &_double
+      column-count: 2 //делает 2 колонки 2-ой фракции
+  &_contacts
+    font-weight: 500
+    font-size: 16px
+    line-height: 130%
+  &__item
+    margin-bottom: 15px
+    cursor: pointer
+    &:hover
+      color: #0BD072
+    &:last-child
+      margin: 0
+    &_contact
+      margin-bottom: 21px
+  &__link
+    transition: color 0.2s ease-in-out
+  &__list_contacts
+    margin-bottom: 36px
