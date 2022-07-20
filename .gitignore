@@ -28,6 +28,9 @@ $RECYCLE.BIN/
 *.lnk
 
 #node_modules
-node_modules/
+/node_modules/
+/dist/
+package-lock.json
+.idea
 
 # End of https://www.toptal.com/developers/gitignore/api/windows
