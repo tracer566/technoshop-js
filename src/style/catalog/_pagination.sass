@@ -1,21 +1,40 @@
 .pagination
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 21px
+  font-weight: 400
+  font-size: 18px
+  line-height: 22px
   &__list
     display: flex
     justify-content: center
-    gap: 8px
-  &__item
-    padding: 8px 15px
-    font-weight: 400
-    font-size: 18px
-    line-height: 22px
-    color: $color-primary
+    align-items: center
+    gap: 10px
+  // &__item
+  &__link
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 36px
+    height: 36px
     border: 2px solid transparent
-    &:hover
-      border: 2px solid $color-main
-      cursor: pointer
-// &__arrow
-// &__arrow_start
-// 
-// &__link
-// &__link_active
-// &__arrow_end
+    border-radius: 2px
+    transition: border-color 0.2s ease-in-out
+  &__link_active
+    border-color: $color-main
+  &__arrow
+    display: block
+    width: 18px
+    height: 18px
+    background-image: url('img/pagination-arrow.svg')
+    background-repeat: no-repeat
+    background-position: center
+    &[href=""]
+      opacity: 0.3
+      pointer-events: none
+  &__arrow_start
+    transform: rotate(180deg)
+
+  // &__arrow_end
+  // &__item
